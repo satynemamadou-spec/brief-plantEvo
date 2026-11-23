@@ -7,7 +7,7 @@
 body{
     font-family:"Georgia",serif;
     background-color: #6AA063;
-    min-width: 100vh;
+    min-width: 50vh;
     justify-content: center;
     align-items: center;
     
@@ -33,7 +33,7 @@ ul a{
     min-height: 50vh;
 }
 
-.titre logo centre{
+.titre logo{
 display: flex;
 align-items: center;
 gap: 15px;
@@ -275,7 +275,7 @@ body.fiche .photo-cycle img {
 
 /* photo 3 */
 body.fiche .photo-appareil { width: 15%; }
-body.fiche .photo-appareil img { height: 240px; }
+body.fiche .photo-appareil img { height: 220px; }
 body.fiche .photo-appareil p {
   background: #e8e8e8;
   font-size: 16px;
@@ -285,7 +285,7 @@ body.fiche .photo-appareil p {
 
 .map-section {
   padding: 100px 8%;
-  background: #f8f7f1;
+  background: hsl(51, 29%, 33%);
 }
 
 .map-heading {
