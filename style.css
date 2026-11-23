@@ -1,0 +1,324 @@
+/*-- PAGE1--*/
+
+*{  margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Georgia",serif;
+    background-color: #6AA063;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.barre{
+    background-color:#BCE3CC ;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :15px 30px;
+    border-radius: 30px;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+.titre centrer {
+    display:fex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.titre logo centre{
+display: flex;
+align-items: center;
+gap: 15px;
+font-size: 40px;
+margin: 20px;
+}
+.trait-court{
+    width: 100px;
+    margin:15px;
+    border-color:#5C1313;
+    justify-content: center;  
+}
+
+p{
+color:black;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 25px;
+align-items: center;
+margin-bottom: 30px;
+}
+.photos{
+    display: flex;
+    gap:2x;
+    height:110px;
+    margin:0 auto 20px
+}
+.photos img{
+    flex:1;
+    min-width: 0;
+    height: 100%;
+    object-fit: cover;
+    background: #5e8a5a;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.description {
+    color:hsla(23, 87%, 9%, 0.845) ;
+    font-size: 16px;
+    line-height:1.6;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.bouton-suivant{
+display: block;
+width: fit-content;
+background: #2e7d32;
+color:#fff;
+text-decoration: none;
+font-family: Arial, sans-serif;
+font-size: 13px;
+font-weight: bold;
+padding: 7px 18px;
+border-radius: 6px;
+border: 1px solid #a5d6a7;
+transition: background .2s;
+margin-right: 40px;
+margin-left: auto;
+}
+.bouton-suivant:hover{ background:#1b5e20;}
+
+
+
+/*------------ Menu CSS-------------*/
+body.menu .page {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 680px;
+  background: radial-gradient(circle at center, #5f9a5a 0%, #3f7a3f 100%);
+  padding: 20px 30px 90px;
+  border-radius: 10px;
+}
+
+body.menu header { margin-bottom: 10px; }
+body.menu main { display: block; }
+body.menu footer { position: static; }
+
+body.menu h1 {
+  font-family: Impact, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  color: #1f3d2b;
+  font-size: clamp(26px, 5vw, 44px);
+  margin: 40px 0 30px;
+}
+
+body.menu .grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 40px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+body.menu .carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform .2s;
+  border-radius: 30px;
+  aspect-ratio:auto ;
+}
+body.menu .carte:hover { transform: scale(1.05); }
+body.menu .carte {
+  width: 100%;
+  aspect-ratio:3/4;
+  display: flex;
+  flex-direction: column;
+  background: #ececec;
+  border-radius: 30px;
+  overflow: hidden;
+}
+body.menu .carte img {
+  width: 100%;
+  height: 180%;
+  object-fit: cover;
+  display: block;
+}
+body.menu .carte span {
+  display: block;
+  text-align: center;
+  margin-top:0;
+  font-family: Impact, sans-serif;
+  font-size: 14px;
+  line-height:1.3;
+  padding: 10px 12px;
+  color: #1f3d2b;
+  text-decoration: none;
+}
+
+/* Bouton suivant : en bas à droite */
+body.menu .bouton-suivant {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  body.menu .grille { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+/*------------ Pages GROUPES : algues, mousses, fougères, gymnospermes, graminées, dicotylédones -------------*/
+/* (à coller à la fin de style.css, à la place du bloc body.algue) */
+
+/* Même cadre, même footer et mêmes boutons que la page menu */
+
+body.fiche .page {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height : 680px;
+  background: radial-gradient(circle at center, #5f9a5a 0%, #3f7a3f 100%);
+  padding: 20px 30px 90px;
+  border-radius: 10px;
+}
+body.fiche header { margin-bottom: 10px; }
+body.fiche main { display: block; }
+body.fiche footer { position: static; }
+
+body.fiche .bouton-retour {
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: radial-gradient(re at 30% 30%, #8bd35f, #2e7d32);
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #b7e4a8;
+}
+body.fiche .bouton-suivant {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  margin: 0;
+}
+
+/* Titre */
+body.fiche h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #121212;
+  margin: 60px 0 35px 40px;
+}
+
+/* Rangée des 3 photo */
+body.fiche .rangee {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+body.fiche .photo {
+  overflow: hidden;
+}
+body.fiche .photo img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+body.fiche .photo p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1f3d2b;
+  padding: 12px 20px;
+  margin: 0;
+}
+
+/* photo 1 */
+body.fiche .photo-observation { width: 33%; }
+body.fiche .photo-observation img { height: 240px; }
+body.fiche .photo-observation p {
+  background: #e8e8e8;
+  height: 105px;
+  margin: 0 12px;
+  padding-top: 8px;
+}
+
+/* photo 2 */
+body.fiche .photo-cycle {
+  width: 36%;
+  height: 340px;
+  background: #ececec;
+  border: 2px solid #f5f5f5;
+}
+body.fiche .photo-cycle img {
+  height: auto;
+  object-fit: contain;
+}
+
+/* photo 3 */
+body.fiche .photo-appareil { width: 15%; }
+body.fiche .photo-appareil img { height: 240px; }
+body.fiche .photo-appareil p {
+  background: #e8e8e8;
+  font-size: 16px;
+  padding: 6px 12px;
+}
+/*--Cartographie--*/
+
+.map-section {
+  padding: 100px 8%;
+  background: #f8f7f1;
+}
+
+.map-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.map-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #214c38;
+  margin-bottom: 18px;
+}
+
+.map-heading p {
+  font-size: 14px;
+  color: #778078;
+  line-height: 1.8;
+}
+
+.map-container {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #dde5da;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
